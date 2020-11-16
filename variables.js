@@ -35,7 +35,7 @@ var shininessVal = 90
 var ambientColor = vec3(0.0, 0.0, 0.0)
 var diffuseColor = vec3(1.0, 0.8, 1.0)
 var specularColor = vec3(1.0, 1.0, 1.0)
-var lightPos = vec3(0.0, 200.0, -500.0)
+var lightPos = vec3(0.0, 800.0, -2000.0)
 
 var cameraPosition
 var flatVert

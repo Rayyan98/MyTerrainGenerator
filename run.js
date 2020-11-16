@@ -1,5 +1,5 @@
 
-noise.seed(0)
+noise.seed(Math.random(0))
 
 function WebGLSetup(){
     canvas = document.getElementById("gl-canvas")
@@ -58,11 +58,7 @@ function updateScene()
 
         at = add(eye, diff)
 
-        if (add(eye, scale(speed, diff))[1] < 4 || add(eye, scale(speed, diff))[1] > 15){
-            eye = eye
-        }
-        else
-            eye = add(eye, scale(speed, diff))
+        eye = add(eye, scale(speed, diff))
 
         at = add(at, scale(speed, diff))
 

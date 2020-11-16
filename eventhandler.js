@@ -5,7 +5,7 @@ function handleKeyDown(event)
 
     if(event.keyCode == 67) //c
     {
-      toggleShading = (toggleShading + 1) % 3
+      toggleShading = ((toggleShading + 2) % 2) + 1
       tshading = shading[toggleShading]
       gl.uniform1fv(toggleShadingL, [toggleShading])
 
@@ -338,25 +338,25 @@ function directionChange(){
 function movementConstraints(){
 
 
-        if(rotatingLeftAngle > 90)
-        {
-            rotatingLeftAngle = 90
-            rotatingLeft = 0
-        }
-        else if(rotatingLeftAngle < -90)
-        {
-            rotatingLeftAngle = -90
-            rotatingLeft = 0
-        }
+        // if(rotatingLeftAngle > 90)
+        // {
+            // rotatingLeftAngle = 90
+            // rotatingLeft = 0
+        // }
+        // else if(rotatingLeftAngle < -90)
+        // {
+            // rotatingLeftAngle = -90
+            // rotatingLeft = 0
+        // }
 
-        if(rotatingUpAngle > 35.5)
-        {
-            rotatingUpAngle = 35.5
-            rotatingUp = 0
-        }
-        else if(rotatingUpAngle < -35.5)
-        {
-            rotatingUpAngle = -35.5
-            rotatingUp = 0
-        }
+        // if(rotatingUpAngle > 35.5)
+        // {
+            // rotatingUpAngle = 35.5
+            // rotatingUp = 0
+        // }
+        // else if(rotatingUpAngle < -35.5)
+        // {
+            // rotatingUpAngle = -35.5
+            // rotatingUp = 0
+        // }
 }
